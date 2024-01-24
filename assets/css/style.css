@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #000, #313131);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: currentColor;
+    display: inline-block;
+    padding: 10px;
+    transition: color 400ms ease-in-out;
+}
+
+a:hover {
+    color: #20C0FF;
+}
+
+.appWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.appTop {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.appBottom {
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+}
+
+.appNav {
+    width: 50px;
+    background: #313131;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.appContent {
+    width: calc(100% - 50px);
+}
+
+.appContent .album {
+    padding: 20px;
+    display: flex;
+}
+
+.appContent .cover {
+    margin-right: 20px;
+}
+
+.appContent .albumInfos {
+    color: #ffffff;
+}
+
+.appContent .albumInfos h1 {
+    font-size: 3em;
+}
+
+.appContent .tracklist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.appContent .trackItem {
+    Display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 0.8em;
+    transition: color 400ms ease-in-out;
+}
+
+.appContent .trackItem:hover {
+    cursor: pointer;
+}
+
+.appContent .tracklist p {
+    margin: 0;
+    padding: 10px;
+}
+
+.appBottom .current {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.appBottom .currentDetails {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.appBottom .author {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.appBottom .track {
+    color: #20C0FF;
+    margin: 0 0 10px;
+}
+
+.appBottom .controls {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
